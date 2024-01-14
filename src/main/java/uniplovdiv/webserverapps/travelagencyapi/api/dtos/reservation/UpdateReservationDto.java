@@ -9,8 +9,8 @@ import java.io.Serializable;
  */
 @Value
 public class UpdateReservationDto implements Serializable {
-    long id;
+    Long id;
     String contactName;
     String phoneNumber;
-    long holidayId;
+    Long holidayId;
 }

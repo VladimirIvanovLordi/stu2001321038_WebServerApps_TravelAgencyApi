@@ -9,16 +9,16 @@ import lombok.Data;
 public class Reservation {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    long id;
+    private Long id;
 
     @Column(name = "contact_name")
-    String contactName;
+    private String contactName;
 
     @Column(name = "phone_number")
-    String phoneNumber;
+    private String phoneNumber;
 
     @ManyToOne(targetEntity = Holiday.class)
-    Holiday holiday;
+    private Holiday holiday;
 
     public Reservation() {}
 

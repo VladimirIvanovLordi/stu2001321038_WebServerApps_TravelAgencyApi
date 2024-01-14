@@ -11,25 +11,25 @@ import java.time.LocalDate;
 public class Holiday {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    long id;
+    private Long id;
 
     @ManyToOne(targetEntity = Location.class)
-    Location location;
+    private Location location;
 
     @Column(name = "title")
-    String title;
+    private String title;
 
     @Column(name = "start_date")
-    LocalDate startDate;
+    private LocalDate startDate;
 
     @Column(name = "duration")
-    int duration;
+    private int duration;
 
     @Column(name = "price")
-    String price;
+    private String price;
 
     @Column(name = "free_slots")
-    int freeSlots;
+    private int freeSlots;
 
     public Holiday() {}
 

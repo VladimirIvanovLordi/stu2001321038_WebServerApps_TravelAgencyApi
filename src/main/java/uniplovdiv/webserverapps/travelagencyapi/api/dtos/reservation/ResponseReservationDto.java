@@ -10,7 +10,7 @@ import java.io.Serializable;
  */
 @Value
 public class ResponseReservationDto implements Serializable {
-    long id;
+    Long id;
     String contactName;
     String phoneNumber;
     ResponseHolidayDto holiday;

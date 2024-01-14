@@ -10,7 +10,7 @@ import java.time.LocalDate;
  */
 @Value
 public class CreateHolidayDto implements Serializable {
-    long locationId;
+    Long locationId;
     String title;
     LocalDate startDate;
     int duration;

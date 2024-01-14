@@ -9,7 +9,7 @@ import java.io.Serializable;
  */
 @Value
 public class UpdateLocationDto implements Serializable {
-    long id;
+    Long id;
     String streetName;
     String streetNumber;
     String cityName;

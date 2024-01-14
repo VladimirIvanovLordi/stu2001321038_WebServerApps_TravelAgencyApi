@@ -11,5 +11,5 @@ import java.io.Serializable;
 public class CreateReservationDto implements Serializable {
     String contactName;
     String phoneNumber;
-    long holidayId;
+    Long holidayId;
 }

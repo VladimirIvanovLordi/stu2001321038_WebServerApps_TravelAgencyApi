@@ -11,7 +11,7 @@ import java.time.LocalDate;
  */
 @Value
 public class ResponseHolidayDto implements Serializable {
-    long id;
+    Long id;
     ResponseLocationDto location;
     String title;
     LocalDate startDate;

@@ -9,7 +9,7 @@ import lombok.Data;
 public class Location {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private Long id;
 
     @Column(name = "street_name")
     private String streetName;
