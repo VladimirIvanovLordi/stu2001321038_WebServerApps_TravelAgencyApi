@@ -4,7 +4,10 @@ import org.springframework.web.bind.annotation.*;
 import uniplovdiv.webserverapps.travelagencyapi.api.dtos.holiday.CreateHolidayDto;
 import uniplovdiv.webserverapps.travelagencyapi.api.dtos.holiday.ResponseHolidayDto;
 import uniplovdiv.webserverapps.travelagencyapi.api.dtos.holiday.UpdateHolidayDto;
+import uniplovdiv.webserverapps.travelagencyapi.api.models.Location;
 import uniplovdiv.webserverapps.travelagencyapi.api.repositories.HolidayRepository;
+
+import java.time.LocalDate;
 
 //TODO
 /*
@@ -26,6 +29,18 @@ public class HolidayController {
     public ResponseHolidayDto[] getAllHolidays(){
     }
 
+    @GetMapping
+    public ResponseHolidayDto[] getHolidaysByStartDate(LocalDate startDateToSearch){
+    }
+
+    @GetMapping
+    public ResponseHolidayDto[] getHolidaysByDuration(int durationToSearch){
+    }
+
+    @GetMapping
+    public ResponseHolidayDto[] getHolidaysByDuration(Location locationToSearch){
+    }
+
     @DeleteMapping("id")
     public boolean deleteHolidayById(){
     }
@@ -36,3 +51,4 @@ public class HolidayController {
 }
 
  */
+
