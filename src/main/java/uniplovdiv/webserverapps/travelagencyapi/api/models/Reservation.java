@@ -19,4 +19,15 @@ public class Reservation {
 
     @Column(name = "holiday")
     Holiday holiday;
+
+    public Reservation() {}
+
+    public Reservation(long id, String contactName, String phoneNumber, Holiday holiday) {
+        this.id = id;
+        this.contactName = contactName;
+        this.phoneNumber = phoneNumber;
+        this.holiday = holiday;
+    }
+
+
 }

@@ -30,4 +30,16 @@ public class Holiday {
 
     @Column(name = "free_slots")
     int freeSlots;
+
+    public Holiday() {}
+
+    public Holiday(long id, Location location, String title, LocalDate startDate, int duration, String price, int freeSlots) {
+        this.id = id;
+        this.location = location;
+        this.title = title;
+        this.startDate = startDate;
+        this.duration = duration;
+        this.price = price;
+        this.freeSlots = freeSlots;
+    }
 }
