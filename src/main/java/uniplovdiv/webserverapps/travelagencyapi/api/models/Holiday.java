@@ -33,8 +33,17 @@ public class Holiday {
 
     public Holiday() {}
 
-    public Holiday(long id, Location location, String title, LocalDate startDate, int duration, String price, int freeSlots) {
+    public Holiday(Long id, Location location, String title, LocalDate startDate, int duration, String price, int freeSlots) {
         this.id = id;
+        this.location = location;
+        this.title = title;
+        this.startDate = startDate;
+        this.duration = duration;
+        this.price = price;
+        this.freeSlots = freeSlots;
+    }
+
+    public Holiday(Location location, String title, LocalDate startDate, int duration, String price, int freeSlots) {
         this.location = location;
         this.title = title;
         this.startDate = startDate;

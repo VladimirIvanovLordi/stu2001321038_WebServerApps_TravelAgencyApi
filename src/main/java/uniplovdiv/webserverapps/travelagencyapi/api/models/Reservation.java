@@ -22,12 +22,16 @@ public class Reservation {
 
     public Reservation() {}
 
-    public Reservation(long id, String contactName, String phoneNumber, Holiday holiday) {
+    public Reservation(Long id, String contactName, String phoneNumber, Holiday holiday) {
         this.id = id;
         this.contactName = contactName;
         this.phoneNumber = phoneNumber;
         this.holiday = holiday;
     }
 
-
+    public Reservation(String contactName, String phoneNumber, Holiday holiday) {
+        this.contactName = contactName;
+        this.phoneNumber = phoneNumber;
+        this.holiday = holiday;
+    }
 }

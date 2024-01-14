@@ -4,12 +4,15 @@ import org.springframework.web.bind.annotation.*;
 import uniplovdiv.webserverapps.travelagencyapi.api.dtos.holiday.CreateHolidayDto;
 import uniplovdiv.webserverapps.travelagencyapi.api.dtos.holiday.ResponseHolidayDto;
 import uniplovdiv.webserverapps.travelagencyapi.api.dtos.holiday.UpdateHolidayDto;
+import uniplovdiv.webserverapps.travelagencyapi.api.repositories.HolidayRepository;
 
 //TODO
 /*
 @RestController
 @RequestMapping("/holidays")
 public class HolidayController {
+
+    HolidayRepository holidayRepository;
 
     @PostMapping
     public ResponseHolidayDto createHoliday(CreateHolidayDto createHolidayDto){

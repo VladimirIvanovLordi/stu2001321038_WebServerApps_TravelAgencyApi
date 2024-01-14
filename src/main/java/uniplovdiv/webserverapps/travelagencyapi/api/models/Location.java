@@ -28,8 +28,16 @@ public class Location {
 
     public Location() {}
 
-    public Location(long id, String streetName, String streetNumber, String cityName, String countryName, String imageUrl) {
+    public Location(Long id, String streetName, String streetNumber, String cityName, String countryName, String imageUrl) {
         this.id = id;
+        this.streetName = streetName;
+        this.streetNumber = streetNumber;
+        this.cityName = cityName;
+        this.countryName = countryName;
+        this.imageUrl = imageUrl;
+    }
+
+    public Location(String streetName, String streetNumber, String cityName, String countryName, String imageUrl) {
         this.streetName = streetName;
         this.streetNumber = streetNumber;
         this.cityName = cityName;

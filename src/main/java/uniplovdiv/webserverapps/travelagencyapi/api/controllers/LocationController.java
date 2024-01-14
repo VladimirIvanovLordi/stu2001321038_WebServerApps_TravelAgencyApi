@@ -5,6 +5,7 @@ import uniplovdiv.webserverapps.travelagencyapi.api.dtos.location.CreateLocation
 import uniplovdiv.webserverapps.travelagencyapi.api.dtos.location.ResponseLocationDto;
 import uniplovdiv.webserverapps.travelagencyapi.api.dtos.location.UpdateLocationDto;
 import uniplovdiv.webserverapps.travelagencyapi.api.models.Location;
+import uniplovdiv.webserverapps.travelagencyapi.api.repositories.LocationRepository;
 
 //TODO
 /*
@@ -12,13 +13,19 @@ import uniplovdiv.webserverapps.travelagencyapi.api.models.Location;
 @RequestMapping("/locations")
 public class LocationController {
 
+    LocationRepository locationRepository;
+
     @PostMapping
     public ResponseLocationDto createLocation(CreateLocationDto createLocationDto){
-        createLocationDto.
+        locationRepository.save(new Location(createLocationDto.getStreetName(), createLocationDto.getStreetNumber()
+                                ,createLocationDto.getCityName(), createLocationDto.getCountryName(), createLocationDto.getImageUrl()));
+
+        return ...
     }
 
     @GetMapping("{id}")
     public ResponseLocationDto getLocationById(long id){
+        locationRepository
     }
 
     @GetMapping
@@ -37,5 +44,7 @@ public class LocationController {
 }
 
  */
+
+
 
 
