@@ -17,10 +17,11 @@ public class LocationController {
 
     @PostMapping
     public ResponseLocationDto createLocation(CreateLocationDto createLocationDto){
-        locationRepository.save(new Location(createLocationDto.getStreetName(), createLocationDto.getStreetNumber()
+        Location location = locationRepository.save(new Location(createLocationDto.getStreetName(), createLocationDto.getStreetNumber()
                                 ,createLocationDto.getCityName(), createLocationDto.getCountryName(), createLocationDto.getImageUrl()));
 
-        return ...
+        return new ResponseLocationDto(location.getId(), location.getStreetName(), location.getStreetNumber()
+                                        ,location.getCityName(), location.getCountryName(), location.getImageUrl());
     }
 
     @GetMapping("{id}")
