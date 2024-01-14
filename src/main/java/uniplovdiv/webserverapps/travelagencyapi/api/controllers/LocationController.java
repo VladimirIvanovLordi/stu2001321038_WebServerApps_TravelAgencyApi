@@ -6,6 +6,7 @@ import uniplovdiv.webserverapps.travelagencyapi.api.dtos.location.ResponseLocati
 import uniplovdiv.webserverapps.travelagencyapi.api.dtos.location.UpdateLocationDto;
 import uniplovdiv.webserverapps.travelagencyapi.api.models.Location;
 
+//TODO
 /*
 @RestController
 @RequestMapping("/locations")
@@ -34,8 +35,6 @@ public class LocationController {
 
 
 }
-
-
 
  */
 

@@ -5,6 +5,7 @@ import uniplovdiv.webserverapps.travelagencyapi.api.dtos.reservation.CreateReser
 import uniplovdiv.webserverapps.travelagencyapi.api.dtos.reservation.ResponseReservationDto;
 import uniplovdiv.webserverapps.travelagencyapi.api.dtos.reservation.UpdateReservationDto;
 
+//TODO
 /*
 @RestController
 @RequestMapping("/reservations")
@@ -30,4 +31,5 @@ public class ReservationController {
     public ResponseReservationDto updateReservation(UpdateReservationDto updateReservationDto){
     }
 }
-*/
+
+ */
