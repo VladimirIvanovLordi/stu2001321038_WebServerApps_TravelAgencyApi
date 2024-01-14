@@ -13,7 +13,7 @@ public class Holiday {
     @GeneratedValue(strategy = GenerationType.AUTO)
     long id;
 
-    @Column(name = "location")
+    @ManyToOne(targetEntity = Location.class)
     Location location;
 
     @Column(name = "title")

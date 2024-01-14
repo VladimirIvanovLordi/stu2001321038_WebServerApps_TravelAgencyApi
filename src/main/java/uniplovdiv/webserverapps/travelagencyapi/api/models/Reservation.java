@@ -17,7 +17,7 @@ public class Reservation {
     @Column(name = "phone_number")
     String phoneNumber;
 
-    @Column(name = "holiday")
+    @ManyToOne(targetEntity = Holiday.class)
     Holiday holiday;
 
     public Reservation() {}

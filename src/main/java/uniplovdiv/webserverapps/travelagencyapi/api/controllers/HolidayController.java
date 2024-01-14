@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.*;
 import uniplovdiv.webserverapps.travelagencyapi.api.dtos.holiday.CreateHolidayDto;
 import uniplovdiv.webserverapps.travelagencyapi.api.dtos.holiday.ResponseHolidayDto;
 import uniplovdiv.webserverapps.travelagencyapi.api.dtos.holiday.UpdateHolidayDto;
-
+/*
 @RestController
 @RequestMapping("/holidays")
 public class HolidayController {
@@ -29,3 +29,6 @@ public class HolidayController {
     public ResponseHolidayDto updateHoliday(UpdateHolidayDto updateHolidayDto){
     }
 }
+
+
+ */
